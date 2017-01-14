@@ -1,0 +1,26 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Gamertag: Login</title>
+    <link rel="stylesheet" href="/css/registerLogin.css"> </head>
+
+<body>
+    <div class='perspective'>
+        <div class='bg'></div>
+        <div class='welcome'>
+            <div class='container'> </div>
+        </div>
+        <div class='login'>
+            <form action='/login' method='post' class='form-login'>
+                <h2 class='title'>Login</h2>
+                <label for='username'>We need your username</label>
+                <input placeholder='your username' type='username' name="username" class='form-control' autofocus>
+                <label for='password'>Password</label>
+                <input placeholder='your password' type='password' name="password" class='form-control'> <span><button style="border:none;" type='submit' class='btn'>Login</button></span> </form>
+        </div>
+    </div>
+</body>
+
+</html>

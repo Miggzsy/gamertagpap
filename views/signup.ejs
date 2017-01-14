@@ -1,0 +1,48 @@
+<!-- views/signup.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gamertag: Login</title>
+    <link rel="stylesheet" href="/css/registerLogin.css"> </head>
+
+<body>
+    <html>
+    <div class='perspective'>
+        <div class='bg'></div>
+        <div class='welcome'>
+            <div class='container'> </div>
+        </div>
+        <div class='signup'>
+            <form action='/signup' method='post' class='form-signup'>
+                <h2 class='title'>Sign Up</h2>
+                <label for='name'>Name</label>
+                <input placeholder="What's your name?" type='text' name="username" class='form-control' autofocus />
+                <label for='email'>We need your email</label>
+                <input placeholder='your best email' type='email' name="email" class='form-control'>
+                <label for='password'>Password</label>
+                <input placeholder='password' type='password' name="password" class='form-control'> <span><button style="border:none;" type='submit' class='btn'>Sign Up</button></span> </form>
+        </div>
+    </div>
+    <!--  <div class='signup'>
+            <form action='/signup' method='post' class='form-signup'>
+                <h2 class='title'>Sign Up</h2>
+                
+                <label for='name'>Name</label>
+                <input placeholder="What's your name?" type='text' class='form-control'>
+
+                <label for='email'>We need your email</label>
+                <input placeholder='your best email' type='email' class='form-control'>
+
+                <label for='password'>Password</label>
+              
+                <input placeholder='password' type='password' class='form-control'>
+
+                <button type='submit' class='btn' id='done'><span>Sign Up</span></button>
+            </form>
+        </div> 
+    </div> -->
+</body>
+
+</html>

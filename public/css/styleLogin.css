@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,700");
+html {
+  font-size: 62.5%;
+  font-family: "Dosis", sans-serif;
+  overflow: hidden;
+}
+
+.title-app {
+  font-size: 3.5em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.author {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #e74c3c;
+  display: block;
+}
+
+.perspective {  
+  height: 82%;
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  margin-right: 80px;
+  margin-top: 80px;
+ border-radius: 8px;
+}
+.perspective .welcome {
+  width: 100%;
+  height: 40%;
+  margin: 0px auto;
+  border-radius: 5px;
+  position: relative;
+  top: 10px;
+  text-align: center;
+  backface-visibility: hidden;
+}
+.perspective .welcome .container {
+  width: 100%;
+  margin: 0px auto;
+  padding: 10px 0;
+}
+.perspective .welcome .container .title {
+  font-size: 2.8em;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+}
+.perspective .welcome .container .text {
+  font-size: 1.6em;
+  color: #000000;
+  line-height: 1.8;
+}
+.perspective .welcome .container .btn {
+  background: #e74c3c;
+  width: 300px;
+  height: 50px;
+  font-size: 1.8em;
+  color: #ffffff;
+  line-height: 2.8;
+  text-transform: uppercase;
+  margin: 280px auto;
+  display: block;
+  cursor: pointer;
+}
+.perspective .welcome .container .help {
+  color: #000000;
+  font-size: 1.4em;
+  font-weight: 300;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  bottom: 280px;
+}
+.perspective .welcome .container .btn-signup {
+  width: 150px;
+  color: #000000;
+  font-size: 1.6em;
+  font-weight: 700;
+  padding: 10px 5px;
+  margin: -25px auto;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  display: block;
+  text-transform: uppercase;
+}
+.perspective .welcome .container .btn-login:hover {
+  background: #ffffff;
+  color: #212C3C;
+  border: 1px solid #000000;
+}
+.perspective .signup,
+.perspective .login {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.perspective .signup .form-signup,
+.perspective .signup .form-login,
+.perspective .login .form-signup,
+.perspective .login .form-login {
+  width: 90%;
+  height: 100%;
+  padding: 1px 0 0 0;
+  margin: 25px auto;
+  position: relative;
+}
+.perspective .signup .form-signup .title,
+.perspective .signup .form-login .title,
+.perspective .login .form-signup .title,
+.perspective .login .form-login .title {
+  font-size: 2.8em;
+  color: #000000;
+}
+.perspective .signup .form-signup label,
+.perspective .signup .form-login label,
+.perspective .login .form-signup label,
+.perspective .login .form-login label {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000000;
+  margin: 20px auto 10px auto;
+  display: block;
+}
+.perspective .signup .form-signup input,
+.perspective .signup .form-login input,
+.perspective .login .form-signup input,
+.perspective .login .form-login input {
+  background: none;
+  width: 100%;
+  height: 30px;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6em;
+  color: #000000;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.perspective .signup .form-signup input:focus,
+.perspective .signup .form-login input:focus,
+.perspective .login .form-signup input:focus,
+.perspective .login .form-login input:focus {
+  outline: none;
+}
+.perspective .signup .form-signup .btn,
+.perspective .signup .form-login .btn,
+.perspective .login .form-signup .btn,
+.perspective .login .form-login .btn {
+  background: #e74c3c;
+  width: 290px;
+  height: 50px;
+  font-size: 1.8em;
+  color: #ffffff;
+  line-height: 2.8;
+  text-transform: uppercase;
+  margin: 25px auto;
+  display: block;
+  cursor: pointer;
+}
+.perspective .signup .form-signup .btn:hover,
+.perspective .signup .form-login .btn:hover,
+.perspective .login .form-signup .btn:hover,
+.perspective .login .form-login .btn:hover {
+  background: #bd3e31;
+  width: 290px;
+  height: 50px;
+  font-size: 1.8em;
+  color: #ffffff;
+  line-height: 2.8;
+  text-transform: uppercase;
+  margin: 25px auto;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+}
+.perspective .signup .form-signup .btn-signup,
+.perspective .signup .form-signup .btn-login,
+.perspective .signup .form-login .btn-signup,
+.perspective .signup .form-login .btn-login,
+.perspective .login .form-signup .btn-signup,
+.perspective .login .form-signup .btn-login,
+.perspective .login .form-login .btn-signup,
+.perspective .login .form-login .btn-login {
+  width: 150px;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: 700;
+  padding: 10px 5px;
+  margin: 10px auto;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  display: block;
+}
+.perspective .signup .form-signup .btn-signup:hover,
+.perspective .signup .form-signup .btn-login:hover,
+.perspective .signup .form-login .btn-signup:hover,
+.perspective .signup .form-login .btn-login:hover,
+.perspective .login .form-signup .btn-signup:hover,
+.perspective .login .form-signup .btn-login:hover,
+.perspective .login .form-login .btn-signup:hover,
+.perspective .login .form-login .btn-login:hover {
+  background: #ffffff;
+  color: #212C3C;
+  border: 1px solid #ffffff;
+  box-shadow: 5px 5px 0px #212C3C;
+}
+.perspective .signup .form-signup .help,
+.perspective .signup .form-login .help,
+.perspective .login .form-signup .help,
+.perspective .login .form-login .help {
+  color: #ffffff;
+  font-size: 1.3em;
+  left: 10px;
+  bottom: 10px;
+  position: absolute;
+}
+.perspective .signup .form-signup a,
+.perspective .signup .form-login a,
+.perspective .login .form-signup a,
+.perspective .login .form-login a {
+  color: #e74c3c;
+  font-size: 1.3em;
+  text-decoration: none;
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  background-position: cover;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.overlay {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.leftcontent {
+  z-index: 2;
+  height: calc(100% - 120px);
+  width: calc(100% - 470px);
+  margin-top: 60px;
+  margin-left: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ltitle {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.lcontent {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  padding-top: 60px;
+}
+
+.rtitle {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 200;
+  padding-left: 0px;
+}
+
+.textinput {
+  margin-left: 35px;
+  height: 40px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #000;
+  border-left-width: 5px;
+  background-color: #000;
+  width: 270px;
+  padding-left: 10px;
+  outline: 0;
+}
+
+.textinput:focus {
+  background-color: #f4f4f4;
+}
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+
+}
+.cb-slideshow:after { 
+    content: '';
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #000000;
+    animation: titleAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px; 
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(../images/1.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../images/2.jpg);
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(../images/3.jpg);
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(../images/4.jpg);
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../images/5.jpg);
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(../images/6.jpg);
+    animation-delay: 30s; 
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+@media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h3 { font-size: 80px }
+}

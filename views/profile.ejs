@@ -1,0 +1,53 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Gamertag: Index</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styleProfile.css"> </head>
+
+<body>
+    <div class="side-panel" id="side-panel">
+        <div id="sidepanel-heading" class="heading"> <span id="content-heading">USER PROFILE</span> </div>
+        <figure class="snip1336"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+            <figcaption> <img src="https://scontent.flis6-1.fna.fbcdn.net/v/t1.0-9/12246952_1159060240789690_5237579697453791233_n.jpg?oh=56549872a5c15074b0b9e2a8cee664ca&oe=59152263" alt="profile-sample4" class="profile" />
+                <h2><%= user.username %></h2>
+                <p>
+                    <form action="/changebio" method="post">
+                        <%= user.bio %>
+                    </form>
+                </p> <a href="www.google.com" class="follow">Settings</a> <a href="#" class="info">More Info</a> </figcaption>
+        </figure>
+        <iframe id="content-frame" style="height: 90%; border:none; display: block; width: 400px; position: absolute;" src="http://apple.com"></iframe>
+        <div data-position="left" class="side-bar"> <span class="tooltip-toggle" aria-label="Profile"> <div class="item one" id="show_hide"><i class="fa fa-user"></i></div> </span> <span class="tooltip-toggle" aria-label="Groups">  <div class="item two"><i class="fa fa-users"></i></div> </span> <span class="tooltip-toggle" aria-label="Chat"> <div class="item tree"><i class="fa fa-comments-o"></i></div> </span> <span class="tooltip-toggle" aria-label="Notifications">  <div class="item four"><i class="fa fa-bell"></i></div> </span>
+            <a href="/logout" style="color:white;"> <span class="tooltip-toggle" aria-label="Logout"> <div class="item five"> <i class="fa fa-sign-out"></i></div></span> </a>
+            </i>
+        </div>
+    </div>
+    <div id="menu-right">
+        <div class="box">
+            <ul>
+                <li>
+                    <a href=""><img src="http://goo.gl/qqppkW" alt="" /><span class="active">Candice Swanepoel</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="http://goo.gl/Dg2nY2" alt="" /><span class="active">Miranda Kerr</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="http://goo.gl/2c2maA" alt="" /><span class="so-active">Alessandra Ambrosio</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="http://goo.gl/axHPyj" alt="" /><span class="active">Doutzen Kroes</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="http://goo.gl/PYJic3" alt="" /><span class="no-active">Elsa Hosk</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
